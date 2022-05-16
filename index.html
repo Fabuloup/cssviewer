@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="default/default_style.css">
+</head>
+<body>
+  <div class="row">
+    <h1>
+      Title 1
+      <small class="text-muted">With faded secondary text</small>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col col-2">
+      <h2>Title 2</h2>
+      <h3>Title 3</h3>
+      <h4>Title 4</h4>
+      <h5>Title 5</h5>
+      <h6>Title 6</h6>
+    </div>
+    <div class="col col-2">
+      <p class="text-primary">Primary</p>
+      <p class="text-secondary">Secondary</p>
+      <p class="text-success">Success</p>
+      <p class="text-warning">Warning</p>
+      <p class="text-danger">Danger</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>Inline text tag</h2>
+      <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+      <p><del>This line of text is meant to be treated as deleted text.</del></p>
+      <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+      <p><u>This line of text will render as underlined.</u></p>
+      <p><small>This line of text is meant to be treated as fine print.</small></p>
+      <p><strong>This line rendered as bold text.</strong></p>
+      <p><em>This line rendered as italicized text.</em></p>
+    </div>
+    <div class="col">
+      <h2>Table</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Ann</td>
+            <td>Li Wan</td>
+            <td>@alw</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Al E.</td>
+            <td>Gater</td>
+            <td>@ag</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Joe the King</td>
+            <td>@jtk</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <h2>Columns</h2>
+  <div class="row border">
+    <div class="col col-2 border border-secondary">
+      <p>Column 2</p>
+    </div>
+    <div class="col col-2 border border-secondary">
+      <p>Column 2</p>
+    </div>
+  </div>
+  <div class="row border">
+    <div class="col col-3 border border-secondary">
+      <p>Column 3</p>
+    </div>
+    <div class="col col-3 border border-secondary">
+      <p>Column 3</p>
+    </div>
+    <div class="col col-3 border border-secondary">
+      <p>Column 3</p>
+    </div>
+  </div>
+  <div class="row border">
+    <div class="col col-4 border border-secondary">
+      <p>Column 4</p>
+    </div>
+    <div class="col col-4 border border-secondary">
+      <p>Column 4</p>
+    </div>
+    <div class="col col-4 border border-secondary">
+      <p>Column 4</p>
+    </div>
+    <div class="col col-4 border border-secondary">
+      <p>Column 4</p>
+    </div>
+  </div>
+  <h2>Buttons</h2>
+  <div class="row">
+    <div>
+      <button type="button">Default</button>
+      <button type="button" class="btn-primary">Primary</button>
+      <button type="button" class="btn-secondary">Secondary</button>
+      <button type="button" class="btn-success">Success</button>
+      <button type="button" class="btn-warning">Warning</button>
+      <button type="button" class="btn-danger">Danger</button>
+    </div>
+  </div>
+  <h2>Buttons outlined</h2>
+  <div class="row">
+    <div>
+      <button type="button" class="btn-primary-outlined">Primary</button>
+      <button type="button" class="btn-secondary-outlined">Secondary</button>
+      <button type="button" class="btn-success-outlined">Success</button>
+      <button type="button" class="btn-warning-outlined">Warning</button>
+      <button type="button" class="btn-danger-outlined">Danger</button>
+    </div>
+  </div>
+  <h2>Forms</h2>
+  <div class="row">
+    <form class="row">
+      <div class="row">
+        <div class="col-3">
+          <label for="mail">Email</label>
+          <input type="text" id="mail" value="email@example.com">
+        </div>
+        <div class="col-3">
+          <label for="mail-readonly">Readonly</label>
+          <input type="text" readonly id="mail-readonly" value="email@example.com">
+        </div>
+        <div class="col-3">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="row">
+        <select>
+          <option selected>Open this select menu</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+      </div>
+      <div class="row">
+        <div>
+          <label for="identityfile">File input</label>
+          <input type="file" id="identityfile">
+        </div>
+      </div>
+      <div class="col">
+        <input type="checkbox" value="" id="checkbox">
+        <label for="checkbox">Default checkbox</label>
+      </div>
+      <div class="col">
+        <label class="switch switch-success">
+          <input type="checkbox" value="" id="checkbox-switch">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="col">
+        <input type="radio" id="radioinput">
+        <label for="radioinput">Default radio</label>
+      </div>
+      <div class="row">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="default/default_main.js"></script>
+</body>
+</html>
